@@ -7,10 +7,10 @@ import Header from '../../components/Header';
 
 describe('<Header />', () => {
   it('should render correctly', () => {
-    const wrapper = mount(<Header title="Title" />);
+    const wrapper = mount(<Header title="Funions" />);
     const title = wrapper.find('header');
 
     assert.strictEqual(title.length, 1);
-    assert.strictEqual(title.text(), 'Title');
+    assert.strictEqual(title.text(), 'Funions');
   });
 });
