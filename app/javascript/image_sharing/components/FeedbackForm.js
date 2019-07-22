@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Button,
   Form,
   FormGroup,
   Input,
@@ -17,6 +18,7 @@ export default function FeedbackForm() {
         <Label for="comments">Comments:</Label>
         <Input type="textarea" id="comments" />
       </FormGroup>
+      <Button color="primary">Submit</Button>
     </Form>
   );
 }

@@ -10,5 +10,9 @@ describe('<FeedbackForm />', () => {
     const wrapper = mount(<FeedbackForm />);
     const formGroup = wrapper.find('FormGroup');
     assert.strictEqual(formGroup.length, 2);
+
+    const button = wrapper.find('Button');
+    assert.strictEqual(button.length, 1);
+    assert.strictEqual(button.text(), 'Submit');
   });
 });
